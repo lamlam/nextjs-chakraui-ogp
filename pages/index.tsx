@@ -23,12 +23,13 @@ function OGP({ url, title, image }: OGPData) {
 
   return (
     <Box maxWidth="md">
-      <Link href={url} isExternal>
+      <Link href={url} isExternal _hover={{ textDecoration: "none" }}>
         <VStack
           borderRadius="xl"
           border="1px"
           borderColor="gray.400"
           spacing={0}
+          _hover={{ bg: "gray.200", textDecoration: "none" }}
         >
           <Image
             src={image}
